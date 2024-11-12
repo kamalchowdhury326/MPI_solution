@@ -1,0 +1,32 @@
+#!/bin/bash
+#PBS -N mpi_job                    
+#PBS -l walltime=01:00:00    
+#PBS -l select=20:mpiprocs=1:mem=10000mb 
+#PBS -q bigmem                
+#PBS -j oe           
+
+cd /home/ualmkc001/HW4/sol_hw4
+
+
+source /apps/profiles/modules_asax.sh.dyn
+module load openmpi/4.1.4-gcc11
+mpicc -g -Wall -o hw4Blocking hw4Blocking.c 
+
+# Run the MPI program
+
+mpirun  -np 1  ./hw4Blocking 5000 5000 /scratch/ualmkc001/
+mpirun  -np 2  ./hw4Blocking 5000 5000 /scratch/ualmkc001/
+mpirun  -np 4  ./hw4Blocking 5000 5000 /scratch/ualmkc001/
+mpirun  -np 8  ./hw4Blocking 5000 5000 /scratch/ualmkc001/
+mpirun  -np 10  ./hw4Blocking 5000 5000 /scratch/ualmkc001/
+mpirun  -np 16  ./hw4Blocking 5000 5000 /scratch/ualmkc001/
+mpirun  -np 20  ./hw4Blocking 5000 5000 /scratch/ualmkc001/
+
+cd /scratch/ualmkc001
+
+diff output.5000.5000.1.txt output.5000.5000.2.txt
+diff output.5000.5000.2.txt output.5000.5000.4.txt
+diff output.5000.5000.2.txt output.5000.5000.8.txt
+diff output.5000.5000.2.txt output.5000.5000.10.txt
+diff output.5000.5000.2.txt output.5000.5000.16.txt
+diff output.5000.5000.2.txt output.5000.5000.20.txt
