@@ -186,7 +186,7 @@ void file_write(char* path, int **A, int m, int n,int iterations, int P){
 
     // Close the file
     fclose(file);
-    printf("File created successfully at %s\n", name_with_extension);
+    //printf("File created successfully at %s\n", name_with_extension);
    // free(name_with_extension);
 }
 
@@ -541,7 +541,7 @@ void compute_local(
   
   if(my_rank==0){
     t2 = gettime();
-    printf("Time taken %f seconds for size=%dx%d  generations=%d after %d iterations\n", t2 - t1, n,n,NTIMES,k);
+    printf("Time taken %f seconds for size=%dx%d  processors=%d after %d iterations\n", t2 - t1, n,n,comm_sz,k);
     //printf("%s\n",filePath);
     file_write(filePath,final_board2D,n,n,NTIMES,comm_sz);
     free(final_board);

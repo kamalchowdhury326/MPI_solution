@@ -1,6 +1,6 @@
 #!/bin/bash
-#PBS -N mpi_job                    
-#PBS -l walltime=01:00:00    
+#PBS -N mpi_nonBlocking                    
+#PBS -l walltime=02:00:00    
 #PBS -l select=20:mpiprocs=1:mem=10000mb 
 #PBS -q bigmem                
 #PBS -j oe           

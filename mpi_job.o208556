@@ -1,0 +1,19 @@
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node asax009 exited on signal 7 (Bus error).
+--------------------------------------------------------------------------
+Time taken 689.245698 seconds for size=5000x5000  generations=5000 after 5000 iterations
+File created successfully at /scratch/ualmkc001/output.5000.5000.2.txt
+Time taken 345.282796 seconds for size=5000x5000  generations=5000 after 5000 iterations
+File created successfully at /scratch/ualmkc001/output.5000.5000.4.txt
+Time taken 173.885098 seconds for size=5000x5000  generations=5000 after 5000 iterations
+File created successfully at /scratch/ualmkc001/output.5000.5000.8.txt
+Time taken 143.640516 seconds for size=5000x5000  generations=5000 after 5000 iterations
+File created successfully at /scratch/ualmkc001/output.5000.5000.10.txt
+Time taken 91.382898 seconds for size=5000x5000  generations=5000 after 5000 iterations
+File created successfully at /scratch/ualmkc001/output.5000.5000.16.txt
+Time taken 74.337894 seconds for size=5000x5000  generations=5000 after 5000 iterations
+File created successfully at /scratch/ualmkc001/output.5000.5000.20.txt

@@ -1,0 +1,7 @@
+Time taken 1379.387719 seconds for size=5000x5000  processors=1 after 5000 iterations
+Time taken 697.982080 seconds for size=5000x5000  processors=2 after 5000 iterations
+Time taken 360.685338 seconds for size=5000x5000  processors=4 after 5000 iterations
+Time taken 188.001844 seconds for size=5000x5000  processors=8 after 5000 iterations
+Time taken 152.456125 seconds for size=5000x5000  processors=10 after 5000 iterations
+Time taken 94.557754 seconds for size=5000x5000  processors=16 after 5000 iterations
+Time taken 78.174431 seconds for size=5000x5000  processors=20 after 5000 iterations
